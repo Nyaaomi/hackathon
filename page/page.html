@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../style/page.css" rel="stylesheet">
+    
+    
+    <title>You're Invited!</title>
+</head>
+<body>
+    <section class="Invitation">
+        <div class="letter-container">
+            <div class="header">
+                <p>Brooklyn stoop sale</p>
+            </div>
+            <div class="date">
+                <p>August 2nd 2024</p>
+            </div>
+            <a href="#stoop-location">
+            <div class="address">
+                <p>2nd Pl. and Court St.<br>
+                Brooklyn<br>
+                United States</p>
+            </div>
+            </a>
+            <hr>
+            <div class="content">
+                <p>Dear neighbours,</p>
+                <p>Welcome to our Brooklyn Stoop Sale! Join us on August 2nd at 12 PM GMT for a delightful afternoon of community, unique finds, and great deals. Whether you're looking for vintage treasures, handmade crafts, or simply want to enjoy the vibrant atmosphere, our stoop sale has something for everyone. Come by, meet your neighbors, and discover the charm of Brooklyn right on our doorstep. We look forward to seeing you there!</p>
+            </div>
+            <div class="signature">
+                <p>truly,</p>
+                <p>Lil & Chelsea</p>
+            </div>
+            <hr>
+            <button id="click-me">Im interested</button>
+            <script src="../script/confetti.min.js"></script>
+                <script>
+                const confetti = new Confetti("click-me");
+
+                // Confetti configuration
+                confetti.setCount(50);
+                </script>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <div class="quote">“your trash can be someone else's treasure ”</div>
+        <div class="about-div">
+            <article class="what-is">
+                <h2>What is a Stoop Sale</h2>
+                <p>A stoop sale is a quintessential Brooklyn experience where neighbors gather on their stoops (porches) to sell second-hand goods ranging from vintage finds to household items. It's a vibrant community event where you can discover unique treasures while chatting with locals. A stoop sale is a garage sale but better because it's not just about transactions; it's about connecting with your community and giving new life to pre-loved items in a lively and social atmosphere.</p>
+            </article>
+            <article class="about-us">
+                <h2>About Us</h2>
+                <p>We're two girls from Brooklyn, Lil and Chelsea, on a mission to give our old clothes a second life. Our motto: stylish and eco-friendly!</p>
+            </article>
+        </div>    
+    </section>
+    <section id="stoop-location">
+        <h2>Find</br> us</br>here🚶🏻‍♀️‍➡️ </h2>
+        <div id="google-map"></div>
+        <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDF4mumP2y2tLt8aAGfmCFENtvOQi2Ic7M&callback=initMap"></script>
+        <script  src="stoop-map.js"></script>
+    </section>
+    <section class="share">
+    </section>
+
+</body>
+</html>
